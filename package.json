@@ -1,0 +1,25 @@
+{
+  "name": "vconf",
+  "version": "0.0.1",
+  "description": "configuration manager",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "author": "TeamVoxa",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.0.2",
+    "nconf": "^0.6.9"
+  },
+  "devDependencies": {
+    "blanket": "~1.1.6",
+    "chai": "~1.9.1",
+    "chai-as-promised": "~4.1.1",
+    "grunt": "~0.4.5",
+    "grunt-mocha-test": "~0.11.0",
+    "mocha": "~1.21.4",
+    "sinon": "~1.10.3",
+    "sinon-chai": "~2.5.0"
+  }
+}

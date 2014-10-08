@@ -1,0 +1,18 @@
+{
+  "protocol" : "http",
+
+  "foo" : {
+    "bar" : {
+      "baz" : true
+    }
+  },
+
+  "logger" :{
+    "key" : "key1",
+    "secret" : "secret1"
+  },
+
+  "session" : {
+    "secret" : "ponies!"
+  }
+}

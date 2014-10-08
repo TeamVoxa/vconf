@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+.sass-cache/
+tmp/
+log/
+*.swp
+tmp/
+public/*
+test/reports/

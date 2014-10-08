@@ -1,0 +1,9 @@
+{
+  "port" : 8076,
+  "protocol": "https-localoverride",
+
+  "api_keys": {
+    "client_id" : "12345",
+    "client_secret": "XYZ"
+  }
+}
