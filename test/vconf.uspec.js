@@ -1,13 +1,17 @@
 describe('vconf', function() {
   var
-    VConf = require('../lib'),
+    vConf = require('../lib'),
     globalPath = __dirname + '/support/',
     envPath = __dirname + '/support/env/',
     packagePath = __dirname + '/../',
-    vconf = new VConf(globalPath, envPath, packagePath);
+    vconf = vConf({
+      global: globalPath,
+      environment: envPath,
+      package: packagePath
+    });
 
-  it('should exist as a constructor function', function() {
-    expect(typeof VConf).to.equal('function');
+  it('should exist as a function', function() {
+    expect(typeof vConf).to.equal('function');
   });
 
   describe('constructor', function() {
@@ -28,5 +32,9 @@ describe('vconf', function() {
     it('should load the package.json data', function() {
       expect(vconf.get('author')).to.equal('TeamVoxa');
     });
+  });
+
+  it('should return a singleton once constructed', function() {
+    expect(vConf()).to.equal(vconf);
   });
 });
